@@ -1,30 +1,34 @@
-Currículo Online
+# Currículo Online
+
 Um currículo online simples e responsivo, desenvolvido para apresentar minhas habilidades, experiências e projetos de forma clara e acessível. Hospedado no GitHub Pages.
 
-🌐 Acesse o Currículo
-Confira o currículo online em:
-https://rolim8.github.io/Curriculo/
+## 🌐 Acesse o Currículo
 
-🚀 Como Usar
-Visualização Local
-Clone o repositório:
+Confira o currículo online em:  
+[https://rolim8.github.io/Curriculo/](https://rolim8.github.io/Curriculo/)
 
-bash
-Copy
-git clone https://github.com/rolim8/Curriculo.git
+---
+
+## 🚀 Como Usar
+
+### Visualização Local
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/rolim8/Curriculo.git
 Abra o arquivo index.html no seu navegador.
 
-🛠️ Tecnologias
+## 🛠️ Tecnologias
 HTML5 - Estrutura do conteúdo.
 
 CSS3 - Estilo e design responsivo.
 
 GitHub Pages - Hospedagem.
 
-🎨 Funcionalidades
+## 🎨 Funcionalidades
 Design Responsivo: Adaptável a dispositivos móveis e desktops.
 
-Seções Organizadas:
+### Seções Organizadas:
 
 Sobre Mim
 
@@ -38,10 +42,10 @@ Projetos
 
 Contato
 
-📄 Licença
+## 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
 
-✒️ Autor
+## ✒️ Autor
 Seu Nome
 
 GitHub: rolim8
