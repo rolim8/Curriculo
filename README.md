@@ -1,70 +1,51 @@
-🚀 Começando
-Siga as instruções abaixo para rodar o projeto localmente ou contribuir com o desenvolvimento.
+Currículo Online
+Um currículo online simples e responsivo, desenvolvido para apresentar minhas habilidades, experiências e projetos de forma clara e acessível. Hospedado no GitHub Pages.
 
-📋 Pré-requisitos
-Para rodar o projeto localmente, você precisará de:
+🌐 Acesse o Currículo
+Confira o currículo online em:
+https://rolim8.github.io/Curriculo/
 
-Um navegador moderno (como Chrome, Firefox ou Edge).
-
-Um editor de código (como VS Code ou Sublime Text).
-
-🔧 Instalação
+🚀 Como Usar
+Visualização Local
 Clone o repositório:
 
 bash
 Copy
 git clone https://github.com/rolim8/Curriculo.git
-Navegue até a pasta do projeto:
+Abra o arquivo index.html no seu navegador.
 
-bash
-Copy
-cd Curriculo
-Abra o arquivo index.html no seu navegador para visualizar o site localmente.
+🛠️ Tecnologias
+HTML5 - Estrutura do conteúdo.
 
-🛠️ Tecnologias Utilizadas
-O projeto foi desenvolvido com as seguintes tecnologias:
+CSS3 - Estilo e design responsivo.
 
-HTML5 - Estruturação do conteúdo do site.
+GitHub Pages - Hospedagem.
 
-CSS3 - Estilização e design responsivo.
+🎨 Funcionalidades
+Design Responsivo: Adaptável a dispositivos móveis e desktops.
 
-JavaScript - Interatividade e funcionalidades dinâmicas (se aplicável).
+Seções Organizadas:
 
-GitHub Pages - Hospedagem e deploy do site.
+Sobre Mim
 
-🎨 Design e Funcionalidades
-O currículo online foi projetado para ser:
+Experiência Profissional
 
-Responsivo: Adapta-se a diferentes tamanhos de tela (desktop, tablet e mobile).
+Formação Acadêmica
 
-Simples e Intuitivo: Facilita a navegação e a leitura das informações.
+Habilidades
 
-Profissional: Apresenta um layout limpo e organizado, ideal para recrutadores e profissionais.
+Projetos
 
-Seções do Currículo
-Sobre Mim: Breve introdução sobre quem sou e minhas principais habilidades.
+Contato
 
-Experiência Profissional: Detalhes sobre minhas experiências de trabalho.
-
-Formação Acadêmica: Informações sobre minha educação e cursos.
-
-Habilidades: Lista de competências técnicas e interpessoais.
-
-Projetos: Destaque de projetos relevantes que desenvolvi.
-
-Contato: Formas de entrar em contato comigo (e-mail, LinkedIn, GitHub, etc.).
-
-📌 Versão
-O projeto está atualmente na versão 1.0. Para ver as versões disponíveis, acesse as tags deste repositório.
+📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
 
 ✒️ Autor
-Seu Nome - Desenvolvimento e design do projeto.
+Seu Nome
 
 GitHub: rolim8
 
 LinkedIn: Seu LinkedIn
 
 E-mail: seu-email@exemplo.com
-
-📄 Licença
-Este projeto está licenciado sob a licença MIT. Para mais detalhes, consulte o arquivo LICENSE.
