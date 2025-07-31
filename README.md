@@ -43,7 +43,9 @@ Projetos
 Contato
 
 ## 📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
+Este projeto está liberado para uso público.
+Você pode usar, modificar e compartilhar sem restrições.
+**(Atribuição de crédito é apreciada, mas não obrigatória.)**
 
 ## ✒️ Autor
 Seu Nome
