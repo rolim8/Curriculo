@@ -432,8 +432,7 @@
               Versão personalizada do clássico jogo Tetris, desenvolvida com
               HTML, CSS e JavaScript.
             </p>
-            <a href="https://rolim8.github.io/DinTetris/"
-              class="text-blue-500"
+            <a href="https://rolim8.github.io/DinTetris/" class="text-blue-500"
               >Ver no GitHub</a
             >
           </div>
@@ -506,13 +505,13 @@
                   >(B1 - Intermediário)</span
                 >
               </span>
-              <span class="text-xs font-semibold inline-block py-1">60%</span>
+              <span class="text-xs font-semibold inline-block py-1">70%</span>
             </div>
             <div class="relative pt-1">
               <div class="w-full bg-gray-200 rounded-full h-2.5">
                 <div
                   class="bg-yellow-500 h-2.5 rounded-full"
-                  style="width: 60%"
+                  style="width: 70%"
                 ></div>
               </div>
             </div>
@@ -526,13 +525,13 @@
                 Italiano
                 <span class="ml-2 text-xs text-gray-600">(A2 - Básico)</span>
               </span>
-              <span class="text-xs font-semibold inline-block py-1">30%</span>
+              <span class="text-xs font-semibold inline-block py-1">20%</span>
             </div>
             <div class="relative pt-1">
               <div class="w-full bg-gray-200 rounded-full h-2.5">
                 <div
                   class="bg-red-500 h-2.5 rounded-full"
-                  style="width: 30%"
+                  style="width: 20%"
                 ></div>
               </div>
             </div>
@@ -548,63 +547,59 @@
         </h2>
         <div class="space-y-4 mt-4">
           <!-- Python -->
-          <div class="flex items-center justify-between">
-            <span class="text-lg font-semibold">🐍 Python</span>
-            <div class="w-3/4 bg-gray-300 h-2 rounded-full">
+          <div class="flex items-center gap-4">
+            <span class="text-lg font-semibold w-32">🐍 Python</span>
+            <div class="flex-1 bg-gray-300 h-2 rounded-full">
               <div
                 class="bg-blue-500 h-2 rounded-full"
                 style="width: 60%"
               ></div>
             </div>
-            <span class="text-lg font-semibold">60%</span>
+            <span class="text-lg font-semibold w-12 text-right">60%</span>
           </div>
-
           <!-- JavaScript -->
-          <div class="flex items-center justify-between">
-            <span class="text-lg font-semibold">🟨 JavaScript</span>
-            <div class="w-3/4 bg-gray-300 h-2 rounded-full">
+          <div class="flex items-center gap-4">
+            <span class="text-lg font-semibold w-32">🟨 JavaScript</span>
+            <div class="flex-1 bg-gray-300 h-2 rounded-full">
               <div
                 class="bg-yellow-500 h-2 rounded-full"
                 style="width: 80%"
               ></div>
             </div>
-            <span class="text-lg font-semibold">80%</span>
+            <span class="text-lg font-semibold w-12 text-right">80%</span>
           </div>
-
           <!-- Node.js -->
-          <div class="flex items-center justify-between">
-            <span class="text-lg font-semibold">🔷 Node.js</span>
-            <div class="w-3/4 bg-gray-300 h-2 rounded-full">
+          <div class="flex items-center gap-4">
+            <span class="text-lg font-semibold w-32">🔷 Node.js</span>
+            <div class="flex-1 bg-gray-300 h-2 rounded-full">
               <div
                 class="bg-green-500 h-2 rounded-full"
                 style="width: 70%"
               ></div>
             </div>
-            <span class="text-lg font-semibold">70%</span>
+            <span class="text-lg font-semibold w-12 text-right">70%</span>
           </div>
-
           <!-- Bootstrap -->
-          <div class="flex items-center justify-between">
-            <span class="text-lg font-semibold">⚙️ Bootstrap</span>
-            <div class="w-3/4 bg-gray-300 h-2 rounded-full">
+          <div class="flex items-center gap-4">
+            <span class="text-lg font-semibold w-32">⚙️ Bootstrap</span>
+            <div class="flex-1 bg-gray-300 h-2 rounded-full">
               <div
                 class="bg-purple-500 h-2 rounded-full"
                 style="width: 50%"
               ></div>
             </div>
-            <span class="text-lg font-semibold">50%</span>
+            <span class="text-lg font-semibold w-12 text-right">50%</span>
           </div>
-
           <!-- Material-UI -->
-          <div class="flex items-center justify-between">
-            <span class="text-lg font-semibold">🔲 Material-UI</span>
-            <div class="w-3/4 bg-gray-300 h-2 rounded-full">
+          <div class="flex items-center gap-4">
+            <span class="text-lg font-semibold w-32">🔲 Material-UI</span>
+            <div class="flex-1 bg-gray-300 h-2 rounded-full">
               <div
                 class="bg-indigo-500 h-2 rounded-full"
                 style="width: 65%"
               ></div>
             </div>
-            <span class="text-lg font-semibold">65%</span>
+            <span class="text-lg font-semibold w-12 text-right">65%</span>
           </div>
         </div>
       </section>
@@ -614,6 +609,13 @@
       <section id="game-section" class="mt-6">
         <h2 class="text-xl font-semibold border-b pb-2">🎮 Jogo Match-3</h2>
         <p class="mt-2">Clique em três blocos da mesma cor para removê-los!</p>
+        <button
+          id="skip-game-btn"
+          class="mt-1 mb-2 px-2 py-1 text-xs bg-gray-200 text-gray-500 rounded opacity-60 hover:opacity-100 hover:bg-red-500 hover:text-white transition float-right"
+          style="border: none; box-shadow: none"
+        >
+          Pular Minigame
+        </button>
         <div id="game-container" class="mt-4"></div>
       </section>
 
@@ -630,5 +632,11 @@
 
     <!-- Script do Jogo -->
     <script src="game.js"></script>
+    <script>
+      document.getElementById("skip-game-btn").onclick = function () {
+        document.getElementById("game-section").style.display = "none";
+        document.getElementById("signature-section").style.display = "block";
+      };
+    </script>
   </body>
 </html>
