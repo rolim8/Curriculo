@@ -48,10 +48,8 @@ Você pode usar, modificar e compartilhar sem restrições.
 **(Atribuição de crédito é apreciada, mas não obrigatória.)**
 
 ## ✒️ Autor
-Seu Nome
+Orlando Rolim
 
 GitHub: rolim8
 
-LinkedIn: Seu LinkedIn
-
-E-mail: seu-email@exemplo.com
+E-mail: rolimorlando@gmail.com
