@@ -1,3 +1,13 @@
+/* Navegação suave */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  padding-top: 6rem;
+  margin-top: -6rem;
+}
+
 /* Estilos do Jogo */
 #game-container {
   display: flex;
@@ -51,4 +61,20 @@
 .tile.removed {
   opacity: 0;
   pointer-events: none;
+}
+
+.arrow-glow {
+  animation: blinkGlow 1s infinite;
+  filter: drop-shadow(0 0 4px #3b82f6);
+}
+@keyframes blinkGlow {
+  0%,
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 4px #3b82f6);
+  }
+  50% {
+    opacity: 0.5;
+    filter: drop-shadow(0 0 8px #3b82f6);
+  }
 }

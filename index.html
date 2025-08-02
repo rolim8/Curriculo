@@ -13,11 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="game.css" />
-    <!-- Estilos do jogo -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.5/dist/cdn.min.js"
-      defer
-    ></script>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png" />
     <style>
       .handwrite-signature {
         font-family: "Dancing Script", cursive;
@@ -31,11 +27,26 @@
         display: none; /* Inicialmente oculta */
       }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   </head>
-  <body class="bg-gray-100 text-gray-900">
-    <div class="max-w-4xl mx-auto my-10 p-8 bg-white rounded-lg shadow-md">
-      <!-- Cabeçalho -->
-      <header class="flex flex-col items-center text-center">
+
+  <body class="bg-gray-800 text-gray-900">
+    <!-- NAVEGACAO -->
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+      <div class="max-w-4xl mx-auto flex justify-center space-x-6">
+        <a href="#about" class="hover:text-blue-400">Sobre Mim</a>
+        <a href="#experience" class="hover:text-blue-400">Experiência</a>
+        <a href="#projects" class="hover:text-blue-400">Projetos</a>
+        <a href="#certificates" class="hover:text-blue-400">Certificados</a>
+        <a href="#skills" class="hover:text-blue-400">Habilidades</a>
+        <a href="#languages" class="hover:text-blue-400">Idiomas</a>
+        <a href="#codingLang" class="hover:text-blue-400">Programação</a>
+      </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto my-10 p-8 bg-gray-100 rounded-lg shadow-md">
+      <!-- CABECALHO -->
+      <header id="about" class="flex flex-col items-center text-center">
         <h1 class="text-3xl font-bold">Orlando Leite Rolim Filho</h1>
         <p class="text-gray-600">Desenvolvedor Web | Front-End & Back-End</p>
         <p class="text-blue-600">
@@ -57,119 +68,318 @@
           </a>
         </p>
       </header>
+      <br />
 
-      <!-- Seção Sobre Mim -->
+      <!-- SOBRE MIM -->
       <section class="mt-6" x-data="{ expanded: false }">
-        <h2 class="text-xl font-semibold border-b pb-2">💡 Sobre Mim</h2>
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-semibold border-b pb-2">💡 Sobre Mim</h2>
+          <button
+            @click="expanded = !expanded"
+            class="ml-4 text-blue-500 hover:underline text-sm"
+          >
+            <span x-show="!expanded">Ver mais</span>
+            <span x-show="expanded">Ver menos</span>
+          </button>
+        </div>
         <p class="mt-2" style="text-align: justify; text-indent: 20px">
-          Meu nome é Orlando Leite Rolim Filho e sou um apaixonado por
-          tecnologia e inovação. Desde o início da minha trajetória, sempre
-          busquei criar soluções criativas e eficientes para a web, utilizando
-          as mais diversas tecnologias para construir experiências e ferramentas
-          que atendam às necessidades dos usuários e das empresas. Ao longo dos
-          anos, venho me dedicando ao desenvolvimento Full-Stack, com um forte
-          foco em aprendizado contínuo e na busca por novas ferramentas e
-          metodologias que possam agregar valor ao meu trabalho.
+          Sou Orlando Leite Rolim Filho, desenvolvedor Full-Stack apaixonado por
+          tecnologia, inovação e soluções criativas para a web. Tenho
+          experiência no desenvolvimento de aplicações com foco em eficiência,
+          desempenho e boas práticas de código, sempre buscando entregar valor
+          real para usuários e empresas.
         </p>
         <div x-show="expanded" class="mt-2">
           <p style="text-align: justify; text-indent: 20px">
-            Tenho uma grande afinidade com arquitetura de software, o que me
-            leva a estudar e aplicar boas práticas de código e focar na
-            performance das aplicações que desenvolvo. Acredito que a criação de
-            um sistema não se limita apenas à construção de suas
-            funcionalidades, mas também envolve garantir que ele seja escalável,
-            eficiente e de fácil manutenção.
+            Tenho grande interesse por arquitetura de software, UX/UI, segurança
+            da informação e automação. Acredito que uma aplicação deve ser bem
+            construída tanto no código quanto na experiência do usuário, sendo
+            intuitiva, acessível, segura e fácil de manter.
           </p>
           <p style="text-align: justify; text-indent: 20px">
-            Além disso, sou um entusiasta de UX/UI, com o objetivo de criar
-            interfaces não apenas visualmente atraentes, mas também intuitivas e
-            acessíveis para todos os tipos de usuários. A experiência do usuário
-            é um dos fatores que considero essenciais no sucesso de qualquer
-            aplicação, por isso, me empenho em entender as necessidades dos
-            usuários e implementar soluções que facilitem sua interação com as
-            ferramentas.
-          </p>
-          <p style="text-align: justify; text-indent: 20px">
-            Embora meu foco seja no desenvolvimento, também me interesso
-            profundamente por segurança da informação e automação de processos.
-            A segurança dos dados e a integridade das aplicações são, sem
-            dúvida, prioridades em meu trabalho, e busco sempre aprimorar meus
-            conhecimentos nesta área para garantir que as soluções que
-            desenvolvo sejam não apenas funcionais, mas também seguras.
-          </p>
-          <p style="text-align: justify; text-indent: 20px">
-            Tenho uma grande facilidade em trabalhar em equipe, compartilhar
-            conhecimento e colaborar com outros profissionais para alcançar os
-            melhores resultados. Acredito que a troca de ideias e a diversidade
-            de experiências são fundamentais para o crescimento tanto individual
-            quanto coletivo.
-          </p>
-          <p style="text-align: justify; text-indent: 20px">
-            Minha maior motivação é resolver problemas reais através da
-            programação. Busco constantemente aplicar minhas habilidades para
-            criar soluções inovadoras que impactem positivamente a sociedade e o
-            mercado. Estou sempre em busca de novos desafios que me permitam
-            crescer profissionalmente e colaborar para o sucesso de projetos
-            transformadores.
+            Valorizo o trabalho em equipe, a troca de conhecimento e a
+            colaboração para alcançar resultados de qualidade. Minha principal
+            motivação é resolver problemas reais por meio da programação,
+            contribuindo com projetos que gerem impacto positivo e crescimento
+            contínuo.
           </p>
         </div>
-        <button
-          @click="expanded = !expanded"
-          class="mt-2 text-blue-500 hover:underline"
-        >
-          <span x-show="!expanded">Ver mais</span>
-          <span x-show="expanded">Ver menos</span>
-        </button>
       </section>
-      <br />
+      <br /><br />
 
-      <!-- Seção Experiência Profissional -->
-      <section class="mt-6">
-        <h2 class="text-xl font-semibold border-b pb-2">
-          💼 Experiência Profissional
-        </h2>
-        <div class="mt-4">
-          <div class="p-4 bg-gray-200 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold">
-              Atendente de Relacionamento com o Cliente
-            </h3>
-            <p class="text-gray-600">OS Net Telecomunicações</p>
-            <ul class="mt-2 text-gray-600">
-              <li>Atendimento ao cliente via telefone e presencial;</li>
-              <li>Abertura e acompanhamento de chamados;</li>
-              <li>Atualização de cadastros de clientes no sistema;</li>
-              <li>
-                Emissão de boletos, cobranças e organização de ambiente de
-                trabalho;
-              </li>
-            </ul>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- EXPERIENCIA PROFISSIONAL -->
+        <section id="experience" class="mt-0">
+          <h2 class="text-xl font-semibold border-b pb-2">
+            💼 Experiência Profissional
+          </h2>
+          <div class="mt-4">
+            <div class="p-4 bg-gray-200 rounded-lg shadow-md">
+              <h3 class="text-lg font-semibold">
+                Atendente de Relacionamento com o Cliente
+              </h3>
+              <p class="text-gray-600">OS Net Telecomunicações</p>
+              <ul class="mt-2 text-gray-600">
+                <li>- Responsável pelo atendimento a clientes;</li>
+                <li>- Gestão de chamados e cadastros;</li>
+                <li>- Emissão de boletos;</li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- CURSO SUPERIOR -->
+        <section class="mt-0">
+          <h2 class="text-xl font-semibold border-b pb-2">🎓 Curso Superior</h2>
+          <div class="mt-4 flex items-center justify-center flex-col">
+            <div class="p-4 bg-gray-200 rounded-lg shadow-md">
+              <h3 class="text-lg font-semibold">
+                Bacharelado em Ciência da Computação
+              </h3>
+              <p class="text-gray-600">
+                Faculdade Católica da Paraíba, Cajazeiras, PB, Brasil
+              </p>
+              <p class="mt-2 text-gray-600">
+                Formação completa com ênfase em desenvolvimento de sistemas e
+                tecnologias da informação.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
       <br />
 
-      <!-- Seção Curso Superior -->
-      <section class="mt-6">
-        <h2 class="text-xl font-semibold border-b pb-2">🎓 Curso Superior</h2>
-        <div class="mt-4">
-          <div class="p-4 bg-gray-200 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold">
-              Bacharelado em Ciência da Computação
-            </h3>
+      <!-- PROJETOS -->
+      <section id="projects" class="mt-6">
+        <h2 class="text-xl font-semibold border-b pb-2">🛠️ Projetos</h2>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <div
+            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition flex items-center justify-center flex-col"
+          >
+            <h3 class="font-semibold">📌 Gerador de Recibos Personalizado</h3>
             <p class="text-gray-600">
-              Faculdade Católica da Paraíba, Cajazeiras, Paraíba, Brasil
+              Aplicação web para gerar e imprimir recibos personalizados.
             </p>
-            <p class="mt-2 text-gray-600">
-              Formação completa com ênfase em desenvolvimento de sistemas e
-              tecnologias da informação.
+            <a
+              href="https://rolim8.github.io/Gerador-de-Recibo_3.0/code/index.html"
+              class="text-blue-500"
+              >Ver no GitHub</a
+            >
+          </div>
+
+          <div
+            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition flex items-center justify-center flex-col"
+          >
+            <h3 class="font-semibold">📌 Gerenciador de Estoque</h3>
+            <p class="text-gray-600">
+              Sistema web para controle de saída de equipamentos.
             </p>
+            <a
+              href="https://rolim8.github.io/Gerenciador_Estoque/"
+              class="text-blue-500"
+              >Ver no GitHub</a
+            >
+          </div>
+
+          <div
+            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition flex items-center justify-center flex-col"
+          >
+            <h3 class="font-semibold">📌 Roleta Seletora de Nomes</h3>
+            <p class="text-gray-600">
+              Ferramenta interativa para seleção aleatória de nomes.
+            </p>
+            <a
+              href="https://rolim8.github.io/Wheel-Name-Selector/index.html"
+              class="text-blue-500"
+              >Ver no GitHub</a
+            >
+          </div>
+
+          <div
+            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition flex items-center justify-center flex-col"
+          >
+            <h3 class="font-semibold">📌 Tetris Clone</h3>
+            <p class="text-gray-600">
+              Versão personalizada do clássico jogo Tetris, desenvolvida com
+              HTML, CSS e JavaScript.
+            </p>
+            <a href="https://rolim8.github.io/DinTetris/" class="text-blue-500"
+              >Ver no GitHub</a
+            >
+          </div>
+
+          <div
+            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition flex items-center justify-center flex-col"
+          >
+            <h3 class="font-semibold">📌 Coffee - Clicker & Merger</h3>
+            <p class="text-gray-600">
+              Jogo incremental para navegador - clicker e merger.
+            </p>
+            <a
+              href="https://rolim8.github.io/Coffee_Clicker_Merge/"
+              class="text-blue-500"
+              >Ver no GitHub</a
+            >
+          </div>
+
+          <div
+            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition flex items-center justify-center flex-col"
+          >
+            <h3 class="font-semibold">📌 Fractal Art Generator</h3>
+            <p class="text-gray-600">
+              Um gerador de artes fractais interativo. Ele permite a criação
+              automatica de padrões visuais fractais.
+            </p>
+            <a
+              href="https://rolim8.github.io/Fractal-Art-Generator/"
+              class="text-blue-500"
+              >Ver no GitHub</a
+            >
           </div>
         </div>
       </section>
-      <br />
+      <br /><br />
 
-      <!-- Seção Habilidades -->
-      <section class="mt-6">
+      <!-- CERTIFICAÇÕES -->
+      <section id="certificates" class="mt-6" x-data="{ expanded: true }">
+        <h2
+          class="text-xl font-semibold border-b pb-2 flex items-center justify-between cursor-pointer"
+          @click="expanded = !expanded"
+        >
+          <div class="flex items-center">🎓 Certificações</div>
+          <span
+            :class="[expanded ? 'rotate-90' : 'arrow-glow', 'arrow-animate', 'text-gray-500', 'transition-transform', 'transform']"
+          >
+            ➡️
+          </span>
+        </h2>
+        <div x-show="expanded">
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 Curso de Desenvolvimento Web | Rocketseat - Potência Tech
+              </h3>
+              <p class="text-gray-600">
+                Curso gratuito sobre Desenvolvimento Web com ênfase em
+                tecnologias modernas e práticas de mercado. - 2023
+              </p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 Curso de Programação Gratuito da Rocketseat
+              </h3>
+              <p class="text-gray-600">
+                Aprenda a programar do zero com esse curso gratuito e prático da
+                Rocketseat. - 2023
+              </p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 Segurança em Tecnologia da Informação
+              </h3>
+              <p class="text-gray-600">
+                Fundação Bradesco - Concluído em agosto de 2024
+              </p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">🔹 Análise de Dados</h3>
+              <p class="text-gray-600">Edune - Concluído em junho de 2024</p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 Segurança da Informação para Todos
+              </h3>
+              <p class="text-gray-600">
+                Escola Virtual Gov - Curso gratuito com foco em segurança da
+                informação e privacidade de dados. - 2024
+              </p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">🔹 Segurança da Informação Básico</h3>
+              <p class="text-gray-600">
+                Cursa - Curso online gratuito sobre segurança da informação,
+                ideal para iniciantes. - 2024
+              </p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 Curso Completo de APIs com Node.js
+              </h3>
+              <p class="text-gray-600">Udemy - 2023</p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 Webdev - Criando Aplicações para Web
+              </h3>
+              <p class="text-gray-600">Udemy - 2023</p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">🔹 JavaScript Avançado</h3>
+              <p class="text-gray-600">Udemy - 2023</p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 Desenvolvimento Full-Stack com MERN
+              </h3>
+              <p class="text-gray-600">Udemy - 2024</p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 React e Redux - Domine o Front-End
+              </h3>
+              <p class="text-gray-600">Udemy - 2024</p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">🔹 Banco de Dados com MongoDB e SQL</h3>
+              <p class="text-gray-600">Udemy - 2024</p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 Segurança da Informação e Ethical Hacking
+              </h3>
+              <p class="text-gray-600">Udemy - 2025</p>
+            </div>
+            <div
+              class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
+            >
+              <h3 class="font-semibold">
+                🔹 DevOps e CI/CD com Docker e Kubernetes
+              </h3>
+              <p class="text-gray-600">Udemy - 2025</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+
+      <!-- HABILIDADES -->
+      <section id="skills" class="mt-6">
         <h2 class="text-xl font-semibold border-b pb-2">🚀 Habilidades</h2>
         <div class="grid grid-cols-2 gap-4 mt-4">
           <div
@@ -252,234 +462,17 @@
           </div>
         </div>
       </section>
-      <br />
+      <br /><br />
 
-      <!-- Seção Certificações -->
-      <section class="mt-6">
-        <h2 class="text-xl font-semibold border-b pb-2">🎓 Certificações</h2>
-        <div class="grid grid-cols-2 gap-4 mt-4">
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">
-              🔹 Curso de Desenvolvimento Web | Rocketseat - Potência Tech
-            </h3>
-            <p class="text-gray-600">
-              Curso gratuito sobre Desenvolvimento Web com ênfase em tecnologias
-              modernas e práticas de mercado. - 2023
-            </p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">
-              🔹 Curso de Programação Gratuito da Rocketseat
-            </h3>
-            <p class="text-gray-600">
-              Aprenda a programar do zero com esse curso gratuito e prático da
-              Rocketseat. - 2023
-            </p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">
-              🔹 Segurança em Tecnologia da Informação
-            </h3>
-            <p class="text-gray-600">
-              Fundação Bradesco - Concluído em agosto de 2024
-            </p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">🔹 Análise de Dados</h3>
-            <p class="text-gray-600">Edune - Concluído em junho de 2024</p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">🔹 Segurança da Informação para Todos</h3>
-            <p class="text-gray-600">
-              Escola Virtual Gov - Curso gratuito com foco em segurança da
-              informação e privacidade de dados. - 2024
-            </p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">🔹 Segurança da Informação Básico</h3>
-            <p class="text-gray-600">
-              Cursa - Curso online gratuito sobre segurança da informação, ideal
-              para iniciantes. - 2024
-            </p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">🔹 Curso Completo de APIs com Node.js</h3>
-            <p class="text-gray-600">Udemy - 2023</p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">
-              🔹 Webdev - Criando Aplicações para Web
-            </h3>
-            <p class="text-gray-600">Udemy - 2023</p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">🔹 JavaScript Avançado</h3>
-            <p class="text-gray-600">Udemy - 2023</p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">
-              🔹 Desenvolvimento Full-Stack com MERN
-            </h3>
-            <p class="text-gray-600">Udemy - 2024</p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">🔹 React e Redux - Domine o Front-End</h3>
-            <p class="text-gray-600">Udemy - 2024</p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">🔹 Banco de Dados com MongoDB e SQL</h3>
-            <p class="text-gray-600">Udemy - 2024</p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">
-              🔹 Segurança da Informação e Ethical Hacking
-            </h3>
-            <p class="text-gray-600">Udemy - 2025</p>
-          </div>
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">
-              🔹 DevOps e CI/CD com Docker e Kubernetes
-            </h3>
-            <p class="text-gray-600">Udemy - 2025</p>
-          </div>
-        </div>
-      </section>
-      <br />
-
-      <!-- Seção Projetos -->
-      <section class="mt-6">
-        <h2 class="text-xl font-semibold border-b pb-2">🛠️ Projetos</h2>
-        <div class="grid grid-cols-2 gap-4 mt-4">
-          <!-- Gerador de Recibo -->
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">📌 Gerador de Recibos Personalizado</h3>
-            <p class="text-gray-600">
-              Aplicação web para gerar e imprimir recibos personalizados.
-            </p>
-            <a
-              href="https://rolim8.github.io/Gerador-de-Recibo_3.0/code/index.html"
-              class="text-blue-500"
-              >Ver no GitHub</a
-            >
-          </div>
-
-          <!-- Gerenciador de Estoque -->
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">📌 Gerenciador de Estoque</h3>
-            <p class="text-gray-600">
-              Sistema web para controle de saída de equipamentos.
-            </p>
-            <a
-              href="https://rolim8.github.io/Gerenciador_Estoque/"
-              class="text-blue-500"
-              >Ver no GitHub</a
-            >
-          </div>
-
-          <!-- Roleta Seletora de Nomes -->
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">📌 Roleta Seletora de Nomes</h3>
-            <p class="text-gray-600">
-              Ferramenta interativa para seleção aleatória de nomes.
-            </p>
-            <a
-              href="https://rolim8.github.io/Wheel-Name-Selector/index.html"
-              class="text-blue-500"
-              >Ver no GitHub</a
-            >
-          </div>
-
-          <!-- Tetris Clone -->
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">📌 Tetris Clone</h3>
-            <p class="text-gray-600">
-              Versão personalizada do clássico jogo Tetris, desenvolvida com
-              HTML, CSS e JavaScript.
-            </p>
-            <a href="https://rolim8.github.io/DinTetris/" class="text-blue-500"
-              >Ver no GitHub</a
-            >
-          </div>
-
-          <!-- Game - Coffee - Clicker & Merger -->
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">📌 Coffee - Clicker & Merger</h3>
-            <p class="text-gray-600">
-              Jogo incremental para navegador - clicker e merger.
-            </p>
-            <a
-              href="https://rolim8.github.io/Coffee_Clicker_Merge/"
-              class="text-blue-500"
-              >Ver no GitHub</a
-            >
-          </div>
-
-          <!-- Gerador de Artes Fractais -->
-          <div
-            class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
-          >
-            <h3 class="font-semibold">📌 Fractal Art Generator</h3>
-            <p class="text-gray-600">
-              Um gerador de artes fractais interativo. Ele permite a criação
-              automatica de padrões visuais fractais.
-            </p>
-            <a
-              href="https://rolim8.github.io/Fractal-Art-Generator/"
-              class="text-blue-500"
-              >Ver no GitHub</a
-            >
-          </div>
-        </div>
-      </section>
-      <br />
-
-      <!-- Seção de Idiomas -->
-      <section class="mt-6">
+      <!-- IDIOMAS -->
+      <section id="languages" class="mt-6">
         <h2 class="text-xl font-semibold border-b pb-2">📚 Idiomas</h2>
         <div class="mt-2">
-          <!-- Barra de Progresso para Inglês (C1 - Avançado) -->
+          <!-- INGLES -->
           <div class="mb-4">
             <div class="flex items-center justify-between">
               <span class="flex items-center">
-                <span role="img" aria-label="flag" class="mr-2">🇬🇧</span>
+                <span role="img" aria-label="flag" class="mr-2">🇿🇦</span>
                 Inglês
                 <span class="ml-2 text-xs text-gray-600">(C1 - Avançado)</span>
               </span>
@@ -495,11 +488,11 @@
             </div>
           </div>
 
-          <!-- Barra de Progresso para Espanhol (B1 - Intermediário) -->
+          <!-- ESPANHOL -->
           <div class="mb-4">
             <div class="flex items-center justify-between">
               <span class="flex items-center">
-                <span role="img" aria-label="flag" class="mr-2">🇪🇸</span>
+                <span role="img" aria-label="flag" class="mr-2">🇲🇽</span>
                 Espanhol
                 <span class="ml-2 text-xs text-gray-600"
                   >(B1 - Intermediário)</span
@@ -517,11 +510,11 @@
             </div>
           </div>
 
-          <!-- Barra de Progresso para Italiano (A2 - Básico) -->
+          <!-- ITALIANO -->
           <div class="mb-4">
             <div class="flex items-center justify-between">
               <span class="flex items-center">
-                <span role="img" aria-label="flag" class="mr-2">🇮🇹</span>
+                <span role="img" aria-label="flag" class="mr-2">🇸🇲</span>
                 Italiano
                 <span class="ml-2 text-xs text-gray-600">(A2 - Básico)</span>
               </span>
@@ -540,13 +533,13 @@
       </section>
       <br />
 
-      <!-- Seção de Linguagens de Programação -->
-      <section class="mt-6">
+      <!-- LINGUAGENS DE PROGRAMAÇÃO -->
+      <section id="codingLang" class="mt-6">
         <h2 class="text-xl font-semibold border-b pb-2">
-          🛠️ Linguagens de Programação
+          <section id="codingLang" class="mt-6">
+            🛠️ Linguagens de Programação
         </h2>
         <div class="space-y-4 mt-4">
-          <!-- Python -->
           <div class="flex items-center gap-4">
             <span class="text-lg font-semibold w-32">🐍 Python</span>
             <div class="flex-1 bg-gray-300 h-2 rounded-full">
@@ -557,7 +550,6 @@
             </div>
             <span class="text-lg font-semibold w-12 text-right">60%</span>
           </div>
-          <!-- JavaScript -->
           <div class="flex items-center gap-4">
             <span class="text-lg font-semibold w-32">🟨 JavaScript</span>
             <div class="flex-1 bg-gray-300 h-2 rounded-full">
@@ -568,7 +560,6 @@
             </div>
             <span class="text-lg font-semibold w-12 text-right">80%</span>
           </div>
-          <!-- Node.js -->
           <div class="flex items-center gap-4">
             <span class="text-lg font-semibold w-32">🔷 Node.js</span>
             <div class="flex-1 bg-gray-300 h-2 rounded-full">
@@ -579,7 +570,6 @@
             </div>
             <span class="text-lg font-semibold w-12 text-right">70%</span>
           </div>
-          <!-- Bootstrap -->
           <div class="flex items-center gap-4">
             <span class="text-lg font-semibold w-32">⚙️ Bootstrap</span>
             <div class="flex-1 bg-gray-300 h-2 rounded-full">
@@ -590,7 +580,6 @@
             </div>
             <span class="text-lg font-semibold w-12 text-right">50%</span>
           </div>
-          <!-- Material-UI -->
           <div class="flex items-center gap-4">
             <span class="text-lg font-semibold w-32">🔲 Material-UI</span>
             <div class="flex-1 bg-gray-300 h-2 rounded-full">
@@ -603,9 +592,9 @@
           </div>
         </div>
       </section>
-      <br />
+      <br /><br />
 
-      <!-- Seção do Jogo -->
+      <!-- JOGO MATCH-3 -->
       <section id="game-section" class="mt-6">
         <h2 class="text-xl font-semibold border-b pb-2">🎮 Jogo Match-3</h2>
         <p class="mt-2">Clique em três blocos da mesma cor para removê-los!</p>
@@ -618,8 +607,9 @@
         </button>
         <div id="game-container" class="mt-4"></div>
       </section>
-
-      <!-- Seção de Assinatura (inicialmente oculta) -->
+      <br />
+      
+      <!-- SEÇÃO DE ASSINATURA -->
       <section id="signature-section" class="mt-6">
         <h2 class="text-xl">Atenciosamente,</h2>
         <p class="mt-2" style="text-align: justify; text-indent: 20px">
@@ -630,7 +620,7 @@
       </section>
     </div>
 
-    <!-- Script do Jogo -->
+    <!-- GAME PLAYER -->
     <script src="game.js"></script>
     <script>
       document.getElementById("skip-game-btn").onclick = function () {
@@ -640,4 +630,3 @@
     </script>
   </body>
 </html>
-
