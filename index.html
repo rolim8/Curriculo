@@ -238,7 +238,7 @@
           </div>
         </div>
       </section>
-      <br /><br />
+      <br />
 
       <!-- CERTIFICAÇÕES -->
       <section id="certificates" class="mt-6" x-data="{ expanded: true }">
@@ -248,7 +248,8 @@
         >
           <div class="flex items-center">🎓 Certificações</div>
           <span
-            :class="[expanded ? 'rotate-90' : 'arrow-glow', 'arrow-animate', 'text-gray-500', 'transition-transform', 'transform']"
+            :class="expanded ? 'rotate-90' : ''"
+            class="arrow-animate text-gray-500 transition-transform transform"
           >
             ➡️
           </span>
@@ -269,7 +270,7 @@
             <div
               class="p-4 bg-gray-200 rounded-lg shadow-md text-center transform hover:scale-105 transition"
             >
-              <h3 class="font-semibold">
+              <h3 class="font-semibold"><br />
                 🔹 Curso de Programação Gratuito da Rocketseat
               </h3>
               <p class="text-gray-600">
