@@ -46,10 +46,3 @@ Contato
 Este projeto está liberado para uso público.
 Você pode usar, modificar e compartilhar sem restrições.
 **(Atribuição de crédito é apreciada, mas não obrigatória.)**
-
-## ✒️ Autor
-Orlando Rolim
-
-GitHub: rolim8
-
-E-mail: rolimorlando@gmail.com
